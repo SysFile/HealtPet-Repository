@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MyPvieqkiCgCpkM5QCpPmJSD89DGn6oXta0tdyIhetsxA5jkZ4pDUt1Dmyl0J4qb2O7grIGqIBtI2NYPwWCRUQ==",
+  "dgSpecHash": "LnFKqu+vsu1JysIjTETMGZGXFAooxV9Jl1DRwoaqIfqNC5zICkLCfLEmE/LC7TX7rIYFP8Bk2w/R9ZYy/w2xXA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\Backend\\Backend.csproj",
+  "projectFilePath": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\backend\\Backend.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\Backend\\Backend.csproj": {}
+    "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\Backend\\Backend.csproj": {
+    "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\Backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\VillaPerez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\Backend\\obj\\",
+        "outputPath": "C:\\Users\\VillaPerez\\Documents\\GitHub\\HealtPet-Repository\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Sistemas\\VisualStudio\\Herramientas\\NuGetPackages",
