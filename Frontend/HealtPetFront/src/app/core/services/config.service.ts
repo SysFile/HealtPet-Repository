@@ -8,7 +8,7 @@ import {environment} from '../../../environments/environment';
 export class ConfigService {
   httpOptions = {
     headers: new HttpHeaders({
-      
+      'Content-Type': 'application/json;charset=UTF-8'
     }),
     params: undefined
   };

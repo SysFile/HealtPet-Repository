@@ -1,27 +1,26 @@
 
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { userI } from '../models/user';
+import { User } from '../models/user';
 import { environment } from '../../../environments/environment'
 import { ConfigService } from './config.service';
+import { map } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private apiURL = environment.apiEndpoint ;
+  constructor(private http : HttpClient , private cs : ConfigService) { }
 
-  constructor(private http : HttpClient, private ca: ConfigService) { }
-
-  GetUsers():Observable<userI[]>{
-    return this.http.get<userI[]>(`${this.ca.base}users`,this.ca.httpOptions);
+  GetUsers():Observable<User[]>{
+    return this.http.get<User[]>(`${this.cs.base}users`,this.cs.httpOptions);
   }
   
 
-  Login(user: userI): Observable<any> {
-    console.log(user);
-    return this.http.post(`${this.ca.base}users/login`, user, this.ca.httpOptions)
+  Login(user: User): Observable<any> {
+    return this.http.post(`${this.cs.base}users/login`, user,this.cs.httpOptions)
   }
-
 }
 
+ 

@@ -1,4 +1,4 @@
-import { userI } from './core/models/user';
+import { User } from './core/models/user';
 import { Component } from '@angular/core';
 import { UserService } from './core/services/UserService.service';
 import { tap } from 'rxjs/operators';
@@ -14,7 +14,7 @@ export class AppComponent {
 
   ngOnInit(): void {
 
-    const user = new userI();
+    const user = new User();
     user.id = 1;
     user.email = "email@example.com1";
     user.password = "uno";
@@ -27,5 +27,6 @@ export class AppComponent {
     },err =>{
       console.log("resp error", err)
     });
+    
   }
 }
