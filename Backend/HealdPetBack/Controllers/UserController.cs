@@ -23,7 +23,20 @@ namespace HealdPetBack.Controllers
         [HttpPost("login")]
         public JsonResult LoginUser([FromBody] userDto request)
         {
-            return new JsonResult(UserDataStore.Current.Users.FirstOrDefault(x => x.id == request.id));
+
+            var user = UserDataStore.Current.Users.FirstOrDefault(x => x.email == request.email && x.password == request.password); ;
+            var id = 0;
+
+            if (user == null) { 
+
+                return new JsonResult(NotFound());
+            }
+            else
+            {
+                id = user.id;
+                return new JsonResult("Login Succesfuly");
+            }
+                
         }
     }
 }

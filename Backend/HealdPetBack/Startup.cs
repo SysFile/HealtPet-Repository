@@ -25,7 +25,17 @@ namespace HealdPetBack
                                   builder.WithOrigins("http://localhost:4200");
                               });
             });
-            services.AddControllers();
+
+            services.AddControllers(
+                action =>
+                {
+                    action.ReturnHttpNotAcceptable = true;
+                }
+            ).AddXmlDataContractSerializerFormatters();
+
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
