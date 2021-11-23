@@ -1,5 +1,6 @@
 ﻿using health.models;
 using health.models.menu;
+using health.models.Pets;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace health.context
 
         public DbSet<User> Usuarios { get; set; }
         public DbSet<Menu> Menu { get; set; }
+        public DbSet<Pets> Mascotas { get; set; }
 
         internal void Query(string v)
         {

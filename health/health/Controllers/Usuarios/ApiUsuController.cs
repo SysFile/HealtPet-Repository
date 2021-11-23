@@ -44,7 +44,6 @@ namespace health.Controllers.Usua
                 {
                     r.mensaje = "Usuario retornado cone éxito";
                     r.data = lst;
-                    
                 }
                 else
                 {
