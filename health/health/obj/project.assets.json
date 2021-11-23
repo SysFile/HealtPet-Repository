@@ -8506,25 +8506,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fuentes.dayron\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\VillaPerez\\.nuget\\packages\\": {},
+    "F:\\Sistemas\\VisualStudio\\Herramientas\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fuentes.dayron\\source\\repos\\HealtPet-Repository\\health\\health\\health.csproj",
+      "projectUniqueName": "C:\\Users\\VillaPerez\\Source\\Repos\\SysFile\\HealtPet-Repository\\health\\health\\health.csproj",
       "projectName": "health",
-      "projectPath": "C:\\Users\\fuentes.dayron\\source\\repos\\HealtPet-Repository\\health\\health\\health.csproj",
-      "packagesPath": "C:\\Users\\fuentes.dayron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fuentes.dayron\\source\\repos\\HealtPet-Repository\\health\\health\\obj\\",
+      "projectPath": "C:\\Users\\VillaPerez\\Source\\Repos\\SysFile\\HealtPet-Repository\\health\\health\\health.csproj",
+      "packagesPath": "C:\\Users\\VillaPerez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VillaPerez\\Source\\Repos\\SysFile\\HealtPet-Repository\\health\\health\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "F:\\Sistemas\\VisualStudio\\Herramientas\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\fuentes.dayron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VillaPerez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
