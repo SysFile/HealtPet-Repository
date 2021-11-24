@@ -24,6 +24,7 @@ namespace health.context
         public DbSet<User> Usuarios { get; set; }
         public DbSet<Menu> Menu { get; set; }
         public DbSet<Pets> Mascotas { get; set; }
+        public DbSet<PetView> PetsDetails { get; set; }
         public DbSet<TiposUsuario> TiposUsuario { get; set; }
         public DbSet<PermisosUsuario> PermisosUsuario { get; set; }
         public DbSet<TipoDocumento> TiposDocumento { get; set; }

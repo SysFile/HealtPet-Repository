@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace health.Controllers.pets
 {
-    [Route("api/[controller]")]
+    
     [ApiController]
     [Authorize]
     public class PetController : ControllerBase
@@ -25,12 +25,30 @@ namespace health.Controllers.pets
         }
 
         [HttpGet]
-        public Object Get()
+        [Route("api/getListaMascotas")]
+        public Object GetMascotas()
         {
+            return context.PetsDetails.ToList();
+        }
 
-            return context.Mascotas.ToList();
+        [HttpGet]
+        [Route("api/getMascotas/{id}")]
+        public Object GetMascotasUsuario(int id)
+        {
+            return context.PetsDetails.Where(u => u.idUsuario == id); 
 
         }
+
+        [HttpPost]
+        [Route("api/registerMascotas")]
+        public void registerMascotas([FromBody] Pets pets)
+        {
+
+            context.Mascotas.Add(pets);
+
+        }
+
+
 
     }
 }

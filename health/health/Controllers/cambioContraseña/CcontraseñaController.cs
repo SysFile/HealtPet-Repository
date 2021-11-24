@@ -32,6 +32,7 @@ namespace health.Controllers.cambioContraseña
                 r.Ok = true;
                 if (us != null)
                 {
+                    us.primerIngreso = user.first;
                     us.contraseña = user.password;
                     context.SaveChanges();
                     r.mensaje = "Contraseña cambiada con éxito";

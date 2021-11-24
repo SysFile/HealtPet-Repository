@@ -52,9 +52,10 @@ namespace health.Controllers.login
                     var token = GenerateToken(lst.correo);
                     r.Ok = true;
                     r.mensaje = lst.correo;
-                    Dictionary<string, string> tokenData = new Dictionary<string, string>
+                    Dictionary<string, Object> tokenData = new Dictionary<string, Object>
                     {
-                        { "token", token }
+                        { "token", token },
+                        { "id", lst.idUsuario }
                     };
                     r.data = tokenData;
                 }
