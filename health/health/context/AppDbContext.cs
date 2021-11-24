@@ -1,4 +1,5 @@
 ﻿using health.models;
+using health.models.citas;
 using health.models.ciudades;
 using health.models.menu;
 using health.models.paises;
@@ -7,6 +8,7 @@ using health.models.Pets;
 using health.models.raza;
 using health.models.tipoDocumento;
 using health.models.TiposUsuario;
+using health.models.veterinaria;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -31,6 +33,8 @@ namespace health.context
         public DbSet<Raza> Raza { get; set; }
         public DbSet<Paises> Paises { get; set; }
         public DbSet<Ciudades> Ciudades { get; set; }
+        public DbSet<Veterinarias> Veterinarias { get; set; }
+        public DbSet<Citas> Citas { get; set; }
 
 
         internal void Query(string v)
