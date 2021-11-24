@@ -399,4 +399,7 @@ C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\D
 C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.dll
 C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.pdb
 C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.genruntimeconfig.cache
-C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.csproj.CopyComplete
+C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\bin\Debug\netcoreapp3.1\health.xml
+C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.csproj.AssemblyReference.cache
+C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.Properties.Resources.resources
+C:\Users\VillaPerez\Source\Repos\SysFile\HealtPet-Repository\health\health\obj\Debug\netcoreapp3.1\health.csproj.GenerateResource.cache
