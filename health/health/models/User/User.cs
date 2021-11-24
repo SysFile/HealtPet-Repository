@@ -18,7 +18,5 @@ namespace health.models
         public string telefono { get; set; }
         public int idPermisos { get; set; }
         public string contraseña { get; set; }
-        public Boolean primerIngreso { get; set; }
-        public int idTipoUsuario { get; set; }
     }
 }
