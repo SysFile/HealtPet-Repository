@@ -65,7 +65,7 @@ namespace health.Controllers.login
             }
             catch (Exception ex)
             {
-                r.mensaje = "Ocurrio un error en el servidor";
+                r.mensaje = "Ocurrio un error en el servidor" + ex;
             }
 
             return r;

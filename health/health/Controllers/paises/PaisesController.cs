@@ -18,13 +18,12 @@ namespace health.Controllers.paises
         public PaisesController(AppDbContext context)
         {
             this.context = context;
-
         }
         [HttpGet]
         [Route("api/getPaises")]
         public Object Get()
         {
-            return context.TiposUsuario.ToList();
+            return context.Paises.ToList();
         }
     }
 }

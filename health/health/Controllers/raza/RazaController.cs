@@ -22,7 +22,7 @@ namespace health.Controllers.raza
         }
 
         [HttpGet]
-        [Route("api/getUsuarios")]
+        [Route("api/getRazas")]
         public Object Get()
         {
             return context.Raza.ToList();
