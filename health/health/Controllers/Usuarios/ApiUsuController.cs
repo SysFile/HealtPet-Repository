@@ -105,7 +105,7 @@ namespace health.Controllers.Usua
 
         [HttpGet]
         [Route("api/getUsuarios/{id}")]
-        public Object Get(int id)
+        public Object GetUser(int id)
         {
             Resp r = new Resp();
 
