@@ -4,8 +4,10 @@
     "\\health",
     "\\health\\health",
     "\\health\\health\\context",
-    "\\health\\health\\Controllers\\cambioContraseña"
+    "\\health\\health\\Controllers",
+    "\\health\\health\\Controllers\\citas",
+    "\\health\\health\\Controllers\\Usuarios"
   ],
-  "SelectedNode": "\\health\\health\\context\\AppDbContext.cs",
+  "SelectedNode": "\\health\\health\\Controllers\\citas\\CitasController.cs",
   "PreviewInSolutionExplorer": false
 }
