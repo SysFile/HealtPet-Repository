@@ -31,6 +31,12 @@ namespace health.Controllers.pets
         {
             return context.Mascotas.ToList();
         }
+        [HttpGet]
+        [Route("api/getListaMascotasVi")]
+        public Object GetListaMascotasVi()
+        {
+            return context.PetsDetails.ToList();
+        }
 
         [HttpGet]
         [Route("api/getMascotas/{id}")]

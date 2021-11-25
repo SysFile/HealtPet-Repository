@@ -4,6 +4,7 @@ using health.models.resp;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,80 @@ namespace health.Controllers.Usua
         public ApiUsuController(AppDbContext context)
         {
             this.context = context;
-
         }
+        // post
+        [HttpPost]
+        [Route("api/postUsuarios")]
+        public Object Porst([FromBody] User user)
+        {
+            Resp r = new Resp();
+            try
+            {
+                context.Usuarios.Add(user);
+                context.SaveChanges();
+                r.Ok = true;
+                r.mensaje = "El Usuario a sido registrado";
+                return Ok(r);
+            }
+            catch
+            {
+                r.Ok = false;
+                r.mensaje = "El Usuario no a sido registrado";
+                return BadRequest(r);
+            }
+        }
+
+
+        // put 
+        [HttpPut]
+        [Route("api/putUsuarios/{id}")]
+        public Object Put([FromBody] User user, int id)
+        {
+            Resp r = new Resp();
+            if (id == user.idUsuario)
+            {
+                context.Entry(user).State = EntityState.Modified;
+                context.SaveChanges();
+                r.Ok = true;
+                r.data = user;
+                r.mensaje = "El Usuario ha sido editado";
+                return Ok(r);
+            }
+            else
+            {
+                r.Ok = false;
+                r.mensaje = "El Usuario no ha sido editado";
+                return BadRequest(r);
+            }
+        }
+
+
+
+        // delete
+        [HttpDelete]
+        [Route("api/deleteUsuarios/{id}")]
+        public Object Delete(int id)
+        {
+            Resp r = new Resp();
+            var us = context.Usuarios.FirstOrDefault(x => x.idUsuario == id);
+
+
+            if (us != null)
+            {
+                context.Usuarios.Remove(us);
+                context.SaveChanges();
+                r.Ok = true;
+                r.mensaje = "El Usuario ha sido eliminado";
+                return Ok(r);
+            }
+            else
+            {
+                r.Ok = false;
+                r.mensaje = "El Usuario no ha sido eliminado";
+                return BadRequest(r);
+            }
+        }
+
 
         [HttpGet]
         [Route("api/getUsuarios")]
@@ -30,9 +103,11 @@ namespace health.Controllers.Usua
             return context.Usuarios.ToList();
         }
 
+
+
         [HttpGet]
         [Route("api/getUsuarios/{id}")]
-        public Object Get(int id)
+        public Object GetUser(int id)
         {
             Resp r = new Resp();
 
